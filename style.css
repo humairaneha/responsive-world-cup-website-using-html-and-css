@@ -1,0 +1,629 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root{
+
+    --black:#161616;
+    --btn-red:#DD0000;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+.container{
+
+    padding:6%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+
+}
+
+.banner{
+
+width:100%;
+height: 80vh;
+background-color: var(--black);
+border-radius: 30px;
+display: flex;
+
+}
+.banner-text{
+   padding: 5% 0 5% 7% ;
+    width: 50%;
+    height: 100%;
+    
+    
+}
+
+.banner-text > h1{
+
+    font-size: 4.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.banner-text > p{
+
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.banner-text > button{
+
+height:10%;
+width:25%;
+background-color:var(--btn-red);
+color: white;
+border-radius: 5px;
+font-size: 0.9rem;
+transition: ease-in 0.2s;
+}
+.banner-text > button:hover{
+    background-color:#5b0101;
+    height:11%;
+width:26%;
+font-size: 1rem;
+}
+
+.banner-image{
+    width: 50%;
+    height: 100%;
+    padding:16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.banner-image > img{
+
+width:70%;
+height: 100%;
+
+}
+
+
+    /*Blog section*/   
+    
+    .blogs  {
+        display:grid;
+        grid-template-columns: repeat(12,1fr);
+        
+       grid-column-gap: 20px;
+        margin-top: 7%;
+        width: 100%;
+        padding: 0 3%;
+    }
+
+    .matches{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        margin-top: 7%;
+        width: 100%;
+        
+    }
+
+    .nav{
+        grid-column: 1/4;
+        
+    }
+    .matches >  .nav > .nav-section{
+        height:45%;
+        width: 90%;}
+    .nav > .nav-section{
+        height:25%;
+        width: 90%;
+        display:flex;
+        flex-direction: column;
+        
+        gap:25px;
+        align-items: center;
+        justify-content: center;
+        background-color: #161616;
+        border-radius: 10px;
+
+    }
+
+   
+    
+    .nav-section >a{
+        height:18%;
+        width:80%;
+     
+  
+    }
+
+    a>button{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .insideindex ,.insidematch{
+        background-color: #DD0000;
+        color: white;
+    }
+   
+    button:hover  {
+        background-color: #DD0000;
+        color: white;
+    }
+
+    .blogpost, .matchpost{
+        grid-column: 4/13;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+        
+       
+        
+    }
+
+    .blog,.match{
+        height: 350px;
+        border: solid 1px #E8E8E8;
+        border-radius: 10px;
+        
+    }
+    .match{
+        height: 230px;
+        width: 260px;
+    }
+
+    .blog-image > img{
+        width:100%;
+    }
+    .blog > button {
+        border: solid 1px #161616;
+
+        margin:10px 0 10px 15px ;
+        height: 8%;
+        width: 27%;
+        border-radius: 4px;
+        
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+
+    }
+
+    .blog >p {
+        font-family: 'Poppins';
+     font-style: normal;
+     margin:0px 0 20px 15px ;
+font-weight: 600;
+font-size: 18px;
+
+    }
+
+   .blog > .icon{
+    margin-left: 15px;
+    display:flex;
+    flex-direction: row;
+    gap:24px;  }
+  .match{
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+    .opponent{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .oppo{padding-top: 5%;}
+.match > .date{
+font-weight: 400;
+font-size: 16px;
+color: #4D4D4D;
+}
+.match > .oppo{
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+text-align: center;
+}
+
+
+
+
+    footer{
+    
+        height: 50vh;
+        background-color: #161616;
+     
+        
+       
+    }
+.footer-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+    .footer-container > .goal {
+       
+        margin-bottom: 3%;
+        text-align: center;
+        color: #E8E8E8;
+        font-size: 1.2rem;
+        opacity: 0.8;
+    }
+
+    .footer-container > hr{
+        width: 70%;
+        border: solid 1px #FFFFFF1A;
+        margin-bottom: 3%;
+    }
+
+    .footer-container > .links {
+
+display: flex;
+width: 100%;
+justify-content: center;
+gap: 5%;
+
+
+    }
+
+    .footer-container>.links>a{
+        text-decoration: none;
+        font-size: 1rem;
+        color: #B9B9B9;
+        transition: ease-in-out 0.1s;
+
+    }
+    .footer-container>.links>a:hover{
+        font-size: 1.3rem;
+        color:#DD0000;
+    }
+    .footer-container>.icons {
+   
+        display: flex;
+        gap:20px;
+        justify-content: center;
+       
+    }
+    
+    .footer-container>.icons > a{
+        font-size: 1.5rem;
+        color: #4D4D4D;
+    }
+
+    .footer-container > .icons :hover {
+        font-size: 1.8rem;
+        color: #DD0000
+    }
+      
+@media only screen and (max-width:1150px)  {
+  
+    .banner-text{
+        padding: 8% 0 8% 8% ;
+              
+     }
+     .banner-text > h1{
+
+        font-size: 3.5rem;
+        line-height: 1.3;
+    }
+    .banner-text > p{
+
+        font-size: 0.9rem;
+        line-height: 1.6;
+        
+    }
+
+    .banner-image > img{
+
+        height: 90%;
+        
+        }
+        .banner-text > button{
+            width:35%;
+          
+            }
+
+            .matchpost{
+                grid-template-columns: repeat(2,1fr);
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin: 0 auto;
+            }
+
+}
+
+
+@media only screen and (max-width:1000px)  {
+
+    .banner-text{
+        padding: 10% 0 8% 8% ;
+              
+     }
+     .banner-text > h1{
+
+        font-size: 2.8rem;
+        line-height: 1.3;
+    }
+    .banner-text > p{
+
+        font-size: 0.8rem;
+        line-height: 1.6;
+        
+    }
+
+  
+        .banner-text > button{
+            width:38%;
+            height: 12%;
+           
+          
+            }
+            
+
+            
+    .nav{
+        grid-column: 1/13;
+        
+    }
+    .nav > .nav-section,.matches> .nav > .nav-section{
+        height:80px;
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+       
+        gap: 20px;
+
+       
+        background-color: white;
+      
+
+    }
+    .nav-section > a{
+        height:50%;
+        width:40%;
+        background-color: #ffff;
+        border: solid 1px #E8E8E8;
+    }
+    a>button{
+        width: 100%;
+        background-color: #ffff;
+        border: solid 1px #E8E8E8;
+    }
+
+    
+ 
+    .blogpost{
+       grid-column: 1/-1;
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+
+    .matchpost{grid-column: 1/-1;}
+
+   
+    
+
+ 
+
+    
+}
+
+@media only screen and (max-width:780px)  {
+    
+  
+      .banner-text{
+        width:60%;
+          padding: 20% 0 8% 8% ;
+                
+       }
+       .banner-text > h1{
+  
+          font-size: 2.3rem;
+          line-height: 1.3;
+      }
+      .banner-text > p{
+  
+          font-size: 0.7rem;
+          line-height: 1.6;
+          
+      }
+  
+    
+          .banner-text > button{
+              width:43%;
+              height: 12%;
+             
+            
+              }
+
+              .banner-image{
+                width: 40%;
+                justify-content: flex-start;
+              }
+              .banner-image > img{
+                width: 90%;
+                
+              }
+              .footer-container > .links {
+
+                
+                flex-wrap: wrap;
+                width: 60%;
+               
+                
+                
+                    }
+
+      
+  }
+
+  
+@media only screen and (max-width:580px)  {
+  
+
+  .banner{
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+   
+   
+  }
+
+  .banner-text{
+      width:100%;
+      height: 50%;
+      
+      padding: 8% ;
+      text-align: center;
+            
+   }
+   .banner-text > h1{
+
+      font-size: 2rem;
+      line-height: 1.2;
+     
+  }
+  .banner-text > p{
+
+      font-size: 0.7rem;
+      line-height: 1.6;
+      
+  }
+
+
+      .banner-text > button{
+          width:35%;
+          height:22%;
+         
+        
+          }
+
+          .banner-image{
+            width:100%;
+            height: 50%;
+            justify-content: center;
+            padding: 0%;
+            padding-top: 5%;
+          }
+          .banner-image > img{
+            width: 60%;
+            height: 100%;
+            
+          }
+       
+
+          .nav > .nav-section,.matches> .nav > .nav-section{
+            height:150px;
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+           
+            gap: 20px;
+          margin-bottom: 10%;
+           
+            background-color: white;
+          
+    
+        }
+        .nav-section > a{
+            height:30%;
+            width:50%;
+            background-color: #ffff;
+            border: solid 1px #E8E8E8;
+        }
+
+        a > button{
+            background-color: #ffff;
+            border: solid 1px #E8E8E8;
+        }
+     
+        .blogpost,.matchpost{
+           grid-column: 1/-1;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
+            align-items: center;
+            
+            grid-row-gap:30px;
+            
+           
+            
+           
+            
+        }
+        .blog,.match{
+            height: 100%;
+         padding-bottom: 7%;
+        }
+
+        .footer-container > .links {
+
+                
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+           
+            
+            
+                }
+
+
+}
+
+
+@media only screen and (max-width:300px)  {
+    
+  .banner{
+    
+    height: 80vh;
+   
+   
+  }
+
+  .banner-text > h1{
+
+    font-size: 1.5rem;
+    line-height: 1.2;
+   
+}
+.banner-text > p{
+
+    font-size: 0.6rem;
+    line-height: 1.6;
+    
+}
+.banner-text > button{
+    width:40%;
+   
+  
+    }
+
+
+}
